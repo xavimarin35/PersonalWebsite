@@ -373,7 +373,7 @@ a:not([href]):not([tabindex]) {
 
 .home .bgScroll {
     animation: 40s linear 0s normal none infinite running bgScroll;
-    background: black url(../images/bg/scroll.jpeg) repeat scroll center top;
+    background: black url(../images/bg/test.jpg) repeat scroll center top;
 }
 
 .bgScroll {
@@ -381,6 +381,31 @@ a:not([href]):not([tabindex]) {
     position: absolute;
     width: 100%;
     z-index: -1;
+}
+
+#bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    height: auto;
+    width: auto;
+}
+
+#header video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
 }
 
 
@@ -598,7 +623,7 @@ h2.menu-item:before {
     transition: all 0.5s ease;
 }
 
-h2.about.menu-item:before {
+/*h2.about.menu-item:before {
     content: '01';
 }
 
@@ -612,7 +637,7 @@ h2.blog.menu-item:before {
 
 h2.contact.menu-item:before {
     content: '04';
-}
+}*/
 
 .menu-block:hover h2.menu-item:before {
     top: -20px;
